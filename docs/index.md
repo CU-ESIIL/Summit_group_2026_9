@@ -62,8 +62,9 @@ public_mode_toggle: true
 
 | Name | Affiliation | Contact | Github |
 |---|---|---|---|
-| | | | |
-| | | | |
+| Rick Levy | Denver Botanic Gardens | richard.levy@botanicgardens.org | ricklevy21 |
+| Sara Tabatabaie | ENVD | Sara.Tabatabaie@colorado.edu |  |
+| Olivia Zhang | University of Florida | oliviazhang@ufl.edu | via-zhang |
 
 ## Team Norms and Decision Making { #team-norms-and-decision-making }
 
