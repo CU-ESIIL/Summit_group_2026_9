@@ -3,7 +3,7 @@ title: Urban Tree Biodiversity
 public_mode_toggle: true
 ---
 
-!!! tip "How to use this page during the Summit"
+<!-- !!! tip "How to use this page during the Summit"
     - This page is your team’s shared workspace and final report-out page. It captures your group’s process and thinking throughout the Summit and will be used to share your work with others. 
     
     - Use this page as your team’s working record during the Summit and your final report-out.
@@ -17,11 +17,11 @@ public_mode_toggle: true
     - Only the items with megaphones will be visible when you hit the 'Summit Report Out' button. 
 
     - If you turn off 'Instructions' then you will only see the page content for public display.
-    
+     -->
 
 # AI-Based Detection of Urban Tree Canopy Change Using Remote Sensing Data
 
-!!! note "Day 1 directions"
+<!-- !!! note "Day 1 directions"
     Change the title to the name of your project.
 
     [Edit Day 1 setup in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L21){ .md-button target="_blank" rel="noopener" }
@@ -32,8 +32,8 @@ public_mode_toggle: true
     Breakout Room #: S124
 
     [ESIIL staff edit in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L28){ .md-button target="_blank" rel="noopener" }
-    
-
+     -->
+<!-- 
 ![Team hero image](assets/hero/hero.png)
 
 !!! note "How to replace the image above"
@@ -42,14 +42,14 @@ public_mode_toggle: true
     Upload your own image to `docs/assets/hero/` and replace the file named `hero.png`. Use a wide image if you can, then refresh the site preview to check how it looks.
     Keep the file path `docs/assets/hero/hero.png` if you want the Markdown above to keep working.
 
-    [Open image folder for changing image](https://github.com/CU-ESIIL/Summit_group_2026_9/tree/main/docs/assets/hero){ .md-button target="_blank" rel="noopener" }
+    [Open image folder for changing image](https://github.com/CU-ESIIL/Summit_group_2026_9/tree/main/docs/assets/hero){ .md-button target="_blank" rel="noopener" } -->
 
 
-[See a completed example](example.md){ .md-button }
+<!-- [See a completed example](example.md){ .md-button } -->
 
 ## People { #people .oasis-report-out-context }
 
-!!! note "Day 1 task"
+<!-- !!! note "Day 1 task"
     Get to know your team: share your cards (5-7 mins). Update your team roster (2-3 min).
 
     Use the in-person name cards to guide quick introductions.
@@ -58,7 +58,7 @@ public_mode_toggle: true
     |---|---|
     | ![Name card prompts for name, institution, area of expertise, research difference, and questions](assets/team/name-card-prompts.png) | ![Follow-up notes card with space for names and follow-up ideas](assets/team/name-card-followups.png) |
 
-    [Edit People in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L63){ .md-button target="_blank" rel="noopener" }
+    [Edit People in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L63){ .md-button target="_blank" rel="noopener" } -->
 
 | Name | Affiliation | Contact | Github |
 |---|---|---|---|
@@ -66,9 +66,9 @@ public_mode_toggle: true
 | Sara Tabatabaie | ENVD | Sara.Tabatabaie@colorado.edu |  |
 | Olivia Zhang | University of Florida | oliviazhang@ufl.edu | via-zhang |
 
-## Team Norms and Decision Making { #team-norms-and-decision-making }
+<!-- ## Team Norms and Decision Making { #team-norms-and-decision-making } -->
 
-!!! note "Day 1 task"
+<!-- !!! note "Day 1 task"
 
     Suggested Self-Facilitation Instructions:
     
@@ -84,8 +84,8 @@ public_mode_toggle: true
     |---|
     | ![Gradients of agreement scale for Summit teams](assets/hero/norms.png) | 
 
-    [Edit Team Norms in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L87){ .md-button target="_blank" rel="noopener" }
-
+    [Edit Team Norms in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L87){ .md-button target="_blank" rel="noopener" } -->
+<!-- 
 Our team norms:
 
 - ...
@@ -94,16 +94,16 @@ Our team norms:
 
 Our decision making strategy:
 
-...
+... -->
 
 ## Our product(s) 📣 { #product-direction .oasis-report-out-section .oasis-report-out-day2 }
 
-!!! note "Day 2 Tasks"
+<!-- !!! note "Day 2 Tasks"
     Morning Focus: questions, hypotheses, context; add at least one visual (photo of whiteboard/notes)
 
     Afternoon Focus: try a few datasets and analyses. Keep it visual, keep it simple. Update the site to reflect what you test. 
 
-    [Edit content below here in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L106){ .md-button target="_blank" rel="noopener" }
+    [Edit content below here in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L106){ .md-button target="_blank" rel="noopener" } -->
 
 Goals:
 
@@ -115,9 +115,9 @@ Goals:
 - Analyze canopy gain/loss hotspots
 - Develop a prototype web interface for citizen/community data collection
 
-![Day 2 morning whiteboard or notes photo](assets/whiteboards/day2_morning_whiteboard.svg)
+<!-- ![Day 2 morning whiteboard or notes photo](assets/whiteboards/day2_morning_whiteboard.svg) -->
 
-*Morning whiteboard or notes showing the question, hypotheses, and context we used to start Day 2.*
+<!-- *Morning whiteboard or notes showing the question, hypotheses, and context we used to start Day 2.* -->
 
 ## Our question(s) 📣 { #project-question .oasis-report-out-section .oasis-report-out-day2 }
 
@@ -125,11 +125,20 @@ Our working question:
 
 How effectively can AI models detect and analyze urban tree canopy change over time using remote sensing data?
 
+Sub-Questions:
+- Which AI or machine learning model provides the highest accuracy in detecting urban tree canopy change over time?
+
+- How can remote sensing imagery and urban tree inventory data be integrated to improve canopy change detection?
+
+- What spatial or environmental factors may contribute to observed changes in urban tree canopy cover?
+
+- How can AI-assisted urban canopy monitoring support community-based urban forestry efforts?
+
 What would count as progress:
 
-Develop a prototype tree modeling framework
+Develop a prototype community-based web platform that allows users to upload tree observations (photos, coordinates, species information) to support future urban forestry monitoring and AI model improvement.
 
-## Why this matters (the “upshot”) 📣 { #why-this-matters .oasis-report-out-section .oasis-report-out-day2 }
+<!-- ## Why this matters (the “upshot”) 📣 { #why-this-matters .oasis-report-out-section .oasis-report-out-day2 }
 
 This matters because:
 
@@ -137,18 +146,18 @@ This matters because:
 
 People who could use this:
 
-...
+... -->
 
 ## Data sources we’re exploring 📣 { #data-exploration .oasis-report-out-section .oasis-report-out-day2 }
 
-!!! note "data exploration"
+<!-- !!! note "data exploration"
     Provide a snapshot showing some initial data patterns. 
 
     Add 2-4 promising data sources (links +1-line notes)    
 
-![Exploration figure](assets/explorations/explore_data_plot.png)
+![Exploration figure](assets/explorations/explore_data_plot.png) -->
 
-*Snapshot showing initial data patterns.*
+<!-- *Snapshot showing initial data patterns.* -->
 
 Promising data sources:
 
@@ -156,6 +165,7 @@ Promising data sources:
 https://data.colorado.gov/Environment/Map-of-Tree-Inventory-Denver/hzmx-2dfk
 - Open Data Catalogue 2020
 https://opendata-geospatialdenver.hub.arcgis.com/datasets/tree-canopy-2020
+- National Land Cover Database (NLCD)
 
 ## Methods/technologies we’re testing 📣 { #methods-and-code .oasis-report-out-section .oasis-report-out-day2 }
 
