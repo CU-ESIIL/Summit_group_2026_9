@@ -19,7 +19,7 @@ public_mode_toggle: true
     - If you turn off 'Instructions' then you will only see the page content for public display.
     
 
-# Team 9 Home: Make Me Your Own
+# AI-Based Detection of Urban Tree Canopy Change Using Remote Sensing Data
 
 !!! note "Day 1 directions"
     Change the title to the name of your project.
@@ -62,7 +62,7 @@ public_mode_toggle: true
 
 | Name | Affiliation | Contact | Github |
 |---|---|---|---|
-| Rick Levy | Denver Botanic Gardens | richard.levy@botanicgardens.org | ricklevy21 |
+| Aakriti Joshi | Clemson University | aakritj@g.clemson.edu |  |
 | Sara Tabatabaie | ENVD | Sara.Tabatabaie@colorado.edu |  |
 | Olivia Zhang | University of Florida | oliviazhang@ufl.edu | via-zhang |
 
@@ -105,14 +105,15 @@ Our decision making strategy:
 
     [Edit content below here in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L106){ .md-button target="_blank" rel="noopener" }
 
-Short term:
+Goals:
 
-...
-
-Long term:
-
-- ...
-- ...
+- Acquire historical canopy imagery/satellite data
+- Preprocess imagery in GIS
+- Train/test AI models
+- Compare model accuracy
+- Integrate Denver tree inventory data
+- Analyze canopy gain/loss hotspots
+- Develop a prototype web interface for citizen/community data collection
 
 ![Day 2 morning whiteboard or notes photo](assets/whiteboards/day2_morning_whiteboard.svg)
 
@@ -122,14 +123,11 @@ Long term:
 
 Our working question:
 
-...
+How effectively can AI models detect and analyze urban tree canopy change over time using remote sensing data?
 
 What would count as progress:
 
-...
-
-## Hypotheses/Intentions [Optional: probably not relevant if you are creating an educational tool]
-
+Develop a prototype tree modeling framework
 
 ## Why this matters (the “upshot”) 📣 { #why-this-matters .oasis-report-out-section .oasis-report-out-day2 }
 
@@ -154,10 +152,10 @@ People who could use this:
 
 Promising data sources:
 
-- [Data source 1](#): ...
-- [Data source 2](#): ...
-- [Data source 3](#): ...
-- [Data source 4](#): ...
+- Tree Inventory Data
+https://data.colorado.gov/Environment/Map-of-Tree-Inventory-Denver/hzmx-2dfk
+- Open Data Catalogue 2020
+https://opendata-geospatialdenver.hub.arcgis.com/datasets/tree-canopy-2020
 
 ## Methods/technologies we’re testing 📣 { #methods-and-code .oasis-report-out-section .oasis-report-out-day2 }
 
