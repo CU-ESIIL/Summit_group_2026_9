@@ -63,7 +63,7 @@ public_mode_toggle: true
 | Name | Affiliation | Contact | Github |
 |---|---|---|---|
 | Aakriti Joshi | Clemson University | aakritj@g.clemson.edu |  |
-| Sara Tabatabaie | ENVD | Sara.Tabatabaie@colorado.edu |  |
+| Sara Tabatabaie | ENVD, University of Colorado, Boulder | Sara.Tabatabaie@colorado.edu |  |
 | Olivia Zhang | University of Florida | oliviazhang@ufl.edu | via-zhang |
 
 <!-- ## Team Norms and Decision Making { #team-norms-and-decision-making } -->
@@ -96,121 +96,105 @@ Our decision making strategy:
 
 ... -->
 
-## Our product(s) 📣 { #product-direction .oasis-report-out-section .oasis-report-out-day2 }
+## Questions 📣 { #product-direction .oasis-report-out-section .oasis-report-out-day2 }
 
-<!-- !!! note "Day 2 Tasks"
-    Morning Focus: questions, hypotheses, context; add at least one visual (photo of whiteboard/notes)
+Goal: To assess the efficiency of AI models in detecting urban tree canopy cover change over time.
 
-    Afternoon Focus: try a few datasets and analyses. Keep it visual, keep it simple. Update the site to reflect what you test. 
+Main working question:
 
-    [Edit content below here in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L106){ .md-button target="_blank" rel="noopener" } -->
+- How effectively can AI models detect and analyze urban tree canopy change over time using remote sensing data?
 
-Goals:
-
-- Acquire historical canopy imagery/satellite data
-- Preprocess imagery in GIS
-- Train/test AI models
-- Compare model accuracy
-- Integrate Denver tree inventory data
-- Analyze canopy gain/loss hotspots
-- Develop a prototype web interface for citizen/community data collection
-
-<!-- ![Day 2 morning whiteboard or notes photo](assets/whiteboards/day2_morning_whiteboard.svg) -->
-
-<!-- *Morning whiteboard or notes showing the question, hypotheses, and context we used to start Day 2.* -->
-
-## Our question(s) 📣 { #project-question .oasis-report-out-section .oasis-report-out-day2 }
-
-Our working question:
-
-How effectively can AI models detect and analyze urban tree canopy change over time using remote sensing data?
+- What is the most effective workflow for using AI and remote sensing data to detect changes in urban tree canopy coverage over time?
 
 Sub-Questions:
-- Which AI or machine learning model provides the highest accuracy in detecting urban tree canopy change over time?
+1. Which AI or machine learning model provides the highest accuracy in detecting urban tree canopy change over time?
+2. How can remote sensing imagery and urban tree inventory data be integrated to improve canopy change detection?
+3. What spatial or environmental factors may contribute to observed changes in urban tree canopy cover? (the longer-term objective)
+4. How can AI-assisted urban canopy monitoring support community-based urban forestry efforts?
 
-- How can remote sensing imagery and urban tree inventory data be integrated to improve canopy change detection?
+## Data Sources 📣 { #data-exploration .oasis-report-out-section .oasis-report-out-day2 }
 
-- What spatial or environmental factors may contribute to observed changes in urban tree canopy cover?
+<b>Input data for comparison of efficiency of AI models in tree canopy detection:</b>
 
-- How can AI-assisted urban canopy monitoring support community-based urban forestry efforts?
+- Google Earth Aerial Imagery
 
-What would count as progress:
+- Microsoft Planetary Aerial Imagery
 
-Develop a prototype community-based web platform that allows users to upload tree observations (photos, coordinates, species information) to support future urban forestry monitoring and AI model improvement.
-
-<!-- ## Why this matters (the “upshot”) 📣 { #why-this-matters .oasis-report-out-section .oasis-report-out-day2 }
-
-This matters because:
-
-...
-
-People who could use this:
-
-... -->
-
-## Data sources we’re exploring 📣 { #data-exploration .oasis-report-out-section .oasis-report-out-day2 }
-
-<!-- !!! note "data exploration"
-    Provide a snapshot showing some initial data patterns. 
-
-    Add 2-4 promising data sources (links +1-line notes)    
-
-![Exploration figure](assets/explorations/explore_data_plot.png) -->
-
-<!-- *Snapshot showing initial data patterns.* -->
-
-Promising data sources:
-
-- Tree Inventory Data
-https://data.colorado.gov/Environment/Map-of-Tree-Inventory-Denver/hzmx-2dfk
-- Open Data Catalogue 2020
-https://opendata-geospatialdenver.hub.arcgis.com/datasets/tree-canopy-2020
 - National Land Cover Database (NLCD)
 
-## Methods/technologies we’re testing 📣 { #methods-and-code .oasis-report-out-section .oasis-report-out-day2 }
+- Landsat Satellite Imagery
 
-!!! note "methods"
-    Add 2-4 methods/technologies we're testing (stats, models, viz).
+- National Aerial Imagery Program (NAIP) Aerial Imagery
 
-[View shared code](https://github.com/CU-ESIIL/Summit_group_2026_9/tree/main/code){ .md-button }
+<b>For validation/verification of AI detection of canopy after efficiency analysis, we can use the following data sources:</b>
 
-Methods/technologies we are testing:
+- Tree Inventory Data
 
-| Method or technology | What we tested | Early note |
-|---|---|---|
-| ... | ... | ... |
-| ... | ... | ... |
-| ... | ... | ... |
-| ... | ... | ... |
+- GIS Tree/Vegetation Shapefiles for different municipalities
 
-### Challenges identified
+- iNaturalist Data
 
-- ...
-- ...
+- Normalized Difference Vegetation Index (NDVI) from satellites
 
-### Visuals
+<b>AI Models:</b>
 
-![Method or workflow visual](assets/figures/figure1.png)
+- Clip Segmentation - connects images with text, works with text prompts; not always the most precise for detailed canopy boundaries
+
+- Segment Anything Model (SAM3) - separate any object from an image - outline exact canopy shape - can provide accurate boundaries, canopy area calculations, change comparison over time
+https://ai.meta.com/research/sam3/
+
+- YOLO (You Only Look Once) - finds objects in images, faster than other models in object detection, but might not have high precision for canopy boundaries
+https://www.ultralytics.com/?utm_source=chatgpt.com
+
+- OWLv2 for vegetation: uses text prompts to identify and localize objects, including vegetation, in imagery 
+https://huggingface.co/google/owlv2-base-patch16
+https://github.com/inuwamobarak/OWLv2
+
+- ADE20K SegFormer - classifies objects in images; best known for land use mapping
+https://github.com/CSAILVision/ADE20K
+
+## Methods 📣 { #methods-and-code .oasis-report-out-section .oasis-report-out-day2 }
+
+<b>Tool and Code Identification</b>
+    Identified and reviewed Python code snippets and AI-based image detection tools suitable for detecting urban tree canopy coverage using remote sensing imagery.
+
+<b>Pilot Testing with NAIP Imagery</b>
+    Applied multiple AI image detection models to a small pilot study area using NAIP aerial imagery to evaluate workflow feasibility and processing performance.
+
+<b>Model Comparison and Evaluation</b>
+    Compared the performance of different AI detection tools based on processing speed, usability, and detection quality.
+
+<b>Accuracy Assessment</b>
+    Using ArcGIS to evaluate detection accuracy by comparing AI-generated canopy outputs with:
+    - NDVI-based vegetation analysis
+    - Existing urban tree canopy shapefiles and reference datasets
+
+<b>Workflow Optimization</b>
+    Selected the most effective AI detection workflow based on overall performance and accuracy.
+
+<b>Multi-Dataset Testing</b>
+    Applied the optimized workflow to additional datasets, including: 
+    - alternative satellite imagery sources
+    - Google Earth aerial imagery to test adaptability and consistency across different image types and resolutions.
+
+<b>Analysis of Urban Tree Canopy Change</b>
+    Used the finalized workflow to explore patterns and changes in urban tree canopy coverage over time.
+
+![Research Workflow](assets/figures/figure1.png)
+![Methodology](assets/figures/figure2.png)
+
 
 ### Next Steps
 
-Short term: 
+Future prospects of this project: Moving from a mapping study to an ecological diagnosis study
 
-Long term: 
+- Using AI-detected canopy dynamics to identify functional vulnerability hotspots in Denver's urban forest. This can be done by combining change detection with crown health proxies (NDVI stress, not just presence). 
 
-!!! note "Day 3 Tasks"
-    Sythesis: highlight 2-3 visuals that tell the story; keep text crisp. Practice a 6-minute walkthrough of the homepage. Why -> Questions -> Data/Methods -> Findings -> Next 
+- Socioeconomic and Environmental changes overlays to show where the urban forest is most ecologically at risk and why.
 
-    [Edit content below here in Markdown](https://github.com/CU-ESIIL/Summit_group_2026_9/edit/main/docs/index.md?plain=1#L203){ .md-button target="_blank" rel="noopener" }
+- Policy recommendations on maintaining sustainability of urban forestry and community awareness programs after identifying causes of changes in canopy cover. 
 
-
-## Team Photo { #team-photo }
-
-![Team photo](assets/team/team_photo.jpg)
-
-*Team members and collaborators who contributed to this project.*
-
-## Findings at a glance 📣 { #findings-at-a-glance .oasis-report-out-section .oasis-report-out-day3 }
+## Findings at a Glance 📣 { #findings-at-a-glance .oasis-report-out-section .oasis-report-out-day3 }
 
 Headline 1 — what, where, how much
 
@@ -224,11 +208,11 @@ Headline 3 — implication for practice or policy
 
 ...
 
-## Visuals that tell a story 📣 { #story-visuals .oasis-report-out-section .oasis-report-out-day3 }
+<!-- ## Visuals that tell a story 📣 { #story-visuals .oasis-report-out-section .oasis-report-out-day3 }
 
 ![Story visual](assets/figures/main_result.png)
 
-*Visual 1: the main pattern or output we want people to remember.*
+*Visual 1: the main pattern or output we want people to remember.* -->
 
 ## What’s next? 📣 { #whats-next .oasis-report-out-section .oasis-report-out-day3 }
 
