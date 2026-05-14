@@ -107,22 +107,21 @@ https://github.com/CSAILVision/ADE20K
 
 ![Methodology](assets/figures/figure2.png)
 
+## Preliminary Results { #findings-at-a-glance .oasis-report-out-section .oasis-report-out-day3 }
 
-### Next Steps
+Below shows an example segmentation produced by the CLIPSegmentation on a satellite image using the GeoAI Python package.
 
-Future prospects of this project: Moving from a mapping study to an ecological diagnosis study
+![Satellite image prediction](assets/figures/figure3.png)
+
+## Next Steps { #next-steps .oasis-report-out-section .oasis-report-out-day3 }
+
+Moving from a mapping study to an ecological diagnosis study
 
 - Using AI-detected canopy dynamics to identify functional vulnerability hotspots in Denver's urban forest. This can be done by combining change detection with crown health proxies (NDVI stress, not just presence). 
 
 - Socioeconomic and Environmental changes overlays to show where the urban forest is most ecologically at risk and why.
 
 - Policy recommendations on maintaining sustainability of urban forestry and community awareness programs after identifying causes of changes in canopy cover. 
-
-## Preliminary Results { #findings-at-a-glance .oasis-report-out-section .oasis-report-out-day3 }
-
-Below shows an example segmentation produced by the CLIPSegmentation on a satellite image using the GeoAI Python package.
-
-![Satellite image prediction](assets/figures/figure3.png)
 
 
 ## Cite & Reuse { #cite-reuse }
